@@ -1,0 +1,241 @@
+div.ui-amount {
+    background: blue;
+}
+
+#filtros{
+	float:left;
+	border: 1px solid lightgrey;
+	width: 15%;
+	height: auto;
+	overflow: visible;
+	margin: 50px 10px 20px 10%;
+	text-align: center;
+}
+#principal{
+	float:left;
+	width: 48%;
+	height: auto;
+	overflow: auto;
+	margin: 50px 0;
+	position:relative;
+	z-index: 0;
+}
+.sub {
+	text-decoration: underline;
+}
+#filtros > h3{
+	margin:10px;
+}
+.apartado{
+	border-top: 1px dotted black;
+	margin: 10px;
+	padding-top: 5px;
+}
+.apartado h4 {
+	margin-bottom: 10px; 
+}
+.apartado input{
+	margin: 15px 10px;
+}
+.apartado input[type="checkbox"]{
+	margin-bottom: 10px;
+}
+.apartado button{
+	background-color: purple;
+	color: white;
+	padding: 5px;
+	margin: 10px;
+}
+.barra{
+	color:red;
+}
+.izda{
+	text-align: left;
+}
+.infoBillete {
+	color:purple;
+	font-size: 16px;
+	padding-left: 15px;
+
+}
+.nav > li {
+	width:50%;
+
+}
+[role="presentation"]{
+	background-color: lightgrey;
+	color:white;
+}
+.tab-pane.active{
+	border-bottom:1px solid lightgrey;
+	border-left:1px solid lightgrey;
+	border-right:1px solid lightgrey;
+}
+.cabeceras {
+	width:100%;
+	height: auto;
+	overflow: auto;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted grey;
+}
+.nombre{
+	color:purple;
+	margin-top: 15px;
+	float:left;
+	width: 14%;
+	text-align: center;
+}
+.entrada {
+	width:100%;
+	height: auto;
+	overflow: auto;
+	border-top: 1px dotted grey;
+	padding: 20px 0;
+}
+.infoEntrada {
+	margin-top: 15px;
+	float:left;
+	width: 14%;
+	text-align: center;
+}
+.precio {
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+.precio button {
+	background-color: purple;
+	color: white;
+	padding:5px;
+}
+#compra{
+	float:left;
+	width: 15%;
+	height: auto;
+	border: 1px solid lightgrey;
+	margin: 50px 5% 50px 10px;
+}
+#tituloCompra {
+	width: 100%;
+	height: auto;
+	font-size: 20px;
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: 1px dotted grey;
+}
+#numeroViajeros{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px dotted grey;
+	padding: 15px 10px;
+}
+#finCompra{
+	width: 100%;
+	height: auto;
+	padding:15px 10px;
+}
+#finCompra p {
+	padding-bottom: 5px;
+}
+#finCompra button {
+	padding:5px;
+	margin: 5px;
+	background-color: purple;
+	color: white;
+}
+
+.elemCompra {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	border-bottom: 1px dotted lightgrey;
+	padding: 3px 10px;
+}
+.tipo{
+	width: 100%;
+	padding: 5px 0;
+}
+.resaltado {
+	float:left;
+	color: purple;
+	padding-right: 5px;
+}
+.ciudad {
+	float:left;
+	padding-right: 5px;
+}
+.hora {
+	clear:both;
+	padding: 5px 0;
+}
+.tren{
+	padding: 5px 0;
+}
+@media only screen and (max-width: 600px) {
+	
+	a.inicio:link, a.inicio:visited {
+		width:100%;
+		float:left;
+		background-color:white;
+		margin:5px 0px;
+	}
+	#margen {
+        width: 100%;
+		text-align:center;
+		margin: 0px;	
+    }
+	ul {
+		margin:0;	
+		padding:0% 5%;
+	}	
+}
+@media only screen and (max-width: 930px) {
+	
+		
+	#filtros {
+		width: 25%;
+		margin-left:7%;
+	}
+	#principal{
+		width: 60%;
+		margin-bottom:15px;
+	}
+	#compra{
+		width: 60%;
+		margin: 0px;
+		
+	}
+	.infoBillete{
+		padding-left: 5px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	#filtros {
+		width: 25%;
+		margin-left:5px;
+
+	}
+	#principal{
+		width: 70%;
+	}
+	#compra{
+		width: 70%;	
+	}
+
+}
+@media only screen and (max-width: 600px) {
+	#filtros {
+		width: 100%;
+		
+	}
+	#principal{
+		width: 100%;
+	}
+	#compra{
+		width: 100%;	
+	}
+
+}
+
+
+
+

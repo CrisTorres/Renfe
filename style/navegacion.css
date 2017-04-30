@@ -1,0 +1,112 @@
+
+a {
+	color:black;
+	text-decoration: none;
+}
+
+#flecha{
+	left:10%;
+	top:280px;
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	z-index: 0;
+}
+#flecha img:hover{
+	width: 115%;
+
+}
+#proceso{
+	width: 100%;
+	margin: 20px auto;
+	width: 600px;
+	padding-left: 30px;
+}
+.texto a{
+	margin: 0 20px;
+}
+.texto a:hover{
+	text-decoration: underline;
+}
+.seleccionada{
+	color:purple;
+	margin: 0 20px;
+}
+.iconos{
+	margin: 5px 20px;
+}
+.iconos img{
+	width: 50px;
+	height: 50px;
+}
+.iconos a img:hover{
+	border: 1px solid purple;
+
+}
+.flecha{
+	margin: 10px 0px;
+
+}
+.faq{
+	right:10%;
+	top:270px;
+	position: absolute;
+	z-index: 0;
+}
+.faq a{
+	color:purple;
+}
+.faq h2:hover{
+	font-size: 35px;
+}
+@media only screen and (max-width: 745px) {
+	#flecha{
+		left:30px;
+		top:300px;
+	}
+	.faq {
+		right: 25px;
+		top:290px;
+	}
+	#proceso{
+		width: 500px;
+	
+	}
+	#proceso img{
+		width: 40px;
+		height: 40px;
+	}
+	.texto a,b{
+		font-size: 14px;
+		margin: 0 15px;
+	}
+}	
+@media only screen and (max-width: 630px) {
+
+	#flecha{
+		left:50px;
+		top:350px;
+	}
+	.faq {
+		right: 50px;
+		top:340px;
+	}
+}	
+@media only screen and (max-width: 600px) {
+
+	#flecha{
+		
+		top:440px;
+	}
+	.faq {
+		
+		top:430px;
+	}
+}
+
+
+
+
+
+
+

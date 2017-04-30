@@ -1,0 +1,93 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding: 0px;
+}
+#header{
+	width:100%;
+	margin-top:20px;
+	height: auto;
+	overflow: auto;
+}
+.linea{
+	width: 100%;
+	margin-top:5px;
+	height:5px;
+	background-color: purple;
+}
+.logo{
+	margin: 0 5%;
+	float:left;
+}
+.id{
+	position:relative;
+	float: left;
+	margin-top: 40px;
+	
+}
+.idform{
+	margin-top: 5px;
+}
+.morado{
+	color:purple;
+}
+.id p{
+	text-align:center;
+}
+
+.id input{
+	padding:5px 0;
+}
+
+.id a{
+	font-size: 12px;
+}
+.cont{
+	float: right;
+	color:purple;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+#ayuda{
+	float:right;
+	text-align: center;
+	margin-right: 10%;
+}
+#menu{
+	margin:auto;
+	width: 680px;
+}
+ul {
+	list-style: none;
+}
+.opciones{
+	clear:both;
+
+}
+.opciones li a {
+	background-color: purple;
+	color:white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display:block;
+	width: 170px;
+	text-align: center;
+	border: 1px solid grey;
+}
+.opciones li a:hover{
+	background-color: #cc00cc;
+}
+
+.opciones > li {
+	float:left;
+}
+.opciones li ul{
+	display:none;
+	position:absolute;
+	width: 170px;
+	
+}
+.opciones li:hover > ul{
+	display:block;
+}

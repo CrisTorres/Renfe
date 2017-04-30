@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Renfe </title>
+	<meta name="description" content="Rediseño RENFE">
+	<meta name="keywords" content="Rediseño RENFE">
+	<meta name="author" content="Grupos 3 y 4">
+	<meta charset="UTF-8">
+
+	<script src="jquery/jquery-1.11.3.min.js"></script>
+	<script src="js/script1.js"></script>	
+	<script src="js/script2.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/styleRenfe.css">
+	<link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+	<link rel="stylesheet" href="style/bootstrap.css">	
+	<link rel="stylesheet" href="style/datepicker.css">		
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/form.js"></script>
+
+</head>
+<body>
+
+	<div id="header">
+		<div class="logo">
+			<img src="./images/logoRenfe.png" alt="Logo Renfe">
+		</div>
+		<div class="id">
+			<p class="morado">IDENTIFÍCATE</p>
+			<input class="idform" type="text" placeholder="Usuario" size="15">
+			<input class="idform" type="text" placeholder="Contraseña" size="15">
+			<a class="morado" href="">ENTRAR</a>
+			<br>
+			<a class="morado" href="">Registrarse</a>
+			<a class="cont" href="">He olvidado mi contraseña </a>
+
+		</div>
+		<div id="ayuda">
+			<img src="./images/ayuda.png" alt="Ayuda">
+			<p class="morado"> <b>¿NECESITAS AYUDA?</b></p>
+			<br>
+			Idioma : 
+			<select>
+				<option value="Español">Español</option>
+				<option value="English">English</option>
+				<option value="Français">Français</option>
+				<option value="Catalá">Catalá</option>
+				<option value="Galego">Galego</option>
+				<option value="Euskera">Euskera</option>
+				<option value="Valenciá">Valenciá</option>
+			</select>
+		</div>
+		<div id="menu">
+			<ul class="men">
+				<li><a href="http://www.renfe.com/viajeros/cercanias/index.html">Cercanías</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/index.html">Precios</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/madrid/index.html">Madrid</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/barcelona/index.html">Barcelona</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/index.html">Resto comunidades</a></li>
+					</ul>
+				</li>	
+				<li><a href="http://www.renfe.com/WebOfertaComercial/jsp/homeOfertaComercialLarga.jsp?destacado=N">Larga distancia</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/index.html">AVE</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/altaria.html">Altaria</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/alvia.html">Alvia</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/AVCity.html">AV City</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/talgo.html">Talgo</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/trenhotel.html">Trenhotel</a></li>
+					</ul>
+
+				</li>
+				<li><a href="http://www.renfe.com/viajeros/info/index.html">Información viajeros</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/info/index.html">Equipaje</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/animales.html">Animales</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/bicicletas.html">Bicicletas</a></li>
+						<li><a href="http://www.renfe.com/viajeros/atendo/index.html">ATENDO</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/aparcamiento.html">Aparcamiento</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.renfe.com/empresa/index.html">Grupo Renfe</a>
+					<ul>
+						<li><a href="http://www.renfe.com/empresa/organizacion/index.html">Quienes somos</a></li>
+						<li><a href="http://www.renfe.com/empresa/organizacion/memoria.html">Información económica</a></li>
+						<li><a href="http://www.renfe.com/empresa/empleo_y_formacion/index.html">Empleo</a></li>
+						<li><a href="http://www.renfe.com/empresa/empleo_y_formacion/BECAS_BolsasReservaMaquinistas.html">Formación</a></li>
+					</ul>
+
+				</li>
+
+			</ul>
+
+		</div>
+	</div>
+	<div class="linea"></div>
+
+	<div id="slider">	
+
+		<div id="formulario">
+			<div class="fila">
+				<img src="./images/iconoTren.png" alt="Tren" style="width:30px; height:30px">
+				<a href="">CONSULTA TU TREN</a>
+			</div>
+			<div class="fila">
+				<form id="form-1">
+					Origen:
+					<input type="text" name="origen" style="margin-left:10px" id="origin">
+					<br>
+					Destino:
+					<input type="text" name="destino" style="margin-left:5px" id="destination">
+				</form>
+				<h4 id="err-ori-dest">Este campo no puede estar vacio</h4>
+			</div>
+			<div class="fila">
+				<form id="form-2">
+					Salida:
+					<input class="datepicker" type="text" name="salida" style="margin-left:18px;" id="salida">
+					
+					<br>
+					Regreso:
+					<input class="datepicker" type="text" name="regreso" style="margin-left:5px" id="regreso">
+			
+				</form>	
+				<h4 id="err-sal-reg">Este campo no puede estar vacio</h4>
+			</div>
+			<div class="fila">
+				<div class="adulto">
+					<h6>ADULTOS</h6>
+					<img src="./images/adulto.png" alt="">					
+					<input type="number" value="1" min="0" max="99" size="4" id="adulto">
+				</div>
+				<div class="adulto">
+					<h6>NIÑOS 4-13</h6>
+					<img src="./images/nino.png" alt="">					
+					<input type="number" value="0" min="0" max="99" id="nino1">
+				</div>
+				<div id="bebes">
+					<h6>NIÑOS <4 </h6>
+					<img src="./images/bebe.png" alt="">					
+					<input type="number" value="0" min="0" max="99" id="nino2">
+				</div>
+			</div>
+			<div class="fila">
+				
+				<h6>TIPO DE VIAJERO</h6>			
+				<div class="filaViajeros">
+					<h6 class="small">+ RENFE JOVEN</h6>
+					<input type="number" value="0" min="0" max="99" id="renfe-joven">
+					<h6 class="small">TARJETA DORADA</h6>
+					<input type="number" value="0" min="0" max="99" id="tarjeta-dorada">
+				</div>
+				<div class="filaViajeros">
+					<input id="opciones" type="checkbox" name="mascota"/> <span class="checkboxtext"> MASCOTA
+					<input id="opciones"type="checkbox" name="bici"/> <span class="checkboxtext"> BICICLETA
+					<input id="opciones" type="checkbox" name="atendo"/> <span class="checkboxtext"> SOLICITUD ATENDO
+					<img src="./images/get_info.png"data-toggle="tooltip" title="Servicio gratuito de Atención y Asistencia a viajeros con discapacidad o movilidad reducida" style="width:20px; heigth:20px; float:none"></img>
+
+				</div>
+				
+				
+			</div>
+			<div class="fila">
+				Codigo promocional:
+				<input type="text" name="origen" style="margin-left:10px">
+			</div>
+			<div>
+				<a class="button" href="billete.html" onClick="return validate()"><b>COMPRAR </b></a>
+			</div>
+			
+		</div>
+
+		
+		<div id="slideshow">
+			<div>
+				<img id="imagenparallax" src="images/imparallax/renfe1.jpg" height="auto" width="100%" align="center" >
+			</div>
+			<div>
+				<img id="imagenparallax" src="images/imparallax/renfe2.jpg" height="auto" width="100%" align="center">
+			</div>
+			<div>
+				<img id="imagenparallax" src="images/imparallax/renfe3.jpg" height="auto" width="100%" align="center" >
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+
+	<div id="imagenes">
+		<div id="grid">
+			<div id="imagengrid1">
+				<a class="modulo" href="http://www.renfe.com/viajeros/index.html">
+					<img src="./images/horarios2.png" alt="Horarios">
+					<h4> HORARIOS Y PRECIO </h4>
+					<h6> AVE, LD, AVANT Y MD </h6>
+				</a>
+			</div>
+			<div id="imagengrid2">
+				<a class="modulo" href="http://www.renfe.com/viajeros/cercanias/index.html">
+					<img src="./images/cercanias2.png" alt="Cercanías">
+					<h4> CERCANIAS Y FEVE </h4>
+					<h6> LINEAS Y HORARIOS </h6>
+				</a>
+			</div>
+			
+		
+	
+			<div id="imagengrid3">
+				<a class="modulo" href="http://www.renfe.com/WebOfertaComercial/jsp/homeOfertaComercial.jsp?destacado=S">
+					<img src="./images/ofertas.png" alt="Ofertas">
+					<h4> NOVEDADES Y OFERTAS </h4>
+					<h6> DESCUENTOS Y PROMOCIONES </h6>
+				</a>
+			</div>
+			<div id="imagengrid4">
+				<a class="modulo" href="http://www.renfe.com/viajeros/info/index.html">
+					<img src="./images/infoUtil.png" alt="Cercanías">
+					<h4> INFORMACION UTIL </h4>
+					<h6> PARA TU VIAJE </h6>
+				</a>
+			</div>
+		
+	
+			<div id="imagengrid5">
+				<a class="modulo" href="http://www.renfe.com/viajeros/tarjetas/index.html">
+					<img src="./images/tarjetarenfe.png" alt="Ofertas">
+					<h4> TARJETAS + RENFE </h4>
+					<h6> LA MEJOR COMPAÑERA DE VIAJE </h6>
+				</a>
+			</div>
+			
+			
+			
+			<div id="imagengrid6">
+				<a class="modulo" href="http://www.renfe.com/viajeros/viajarenfamilia/index.html">
+					<img src="./images/viajarFamilia.png" alt="Cercanías">
+					<h4> VIAJAR EN FAMILIA </h4>
+					<h6> DESCUENTOS PARA TODOS </h6>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div id="menufondo">
+		<div class="columna1">
+			<div class="titulo">
+				OTRAS OPERACIONES DE VIAJE
+			</div>
+			<ul class="ops">
+				<li><a href="https://venta.renfe.com/vol/accesoCambio.do?Idioma=es&Pais=ES&inirenfe=SI">CAMBIOS</a></li>
+				<li><a href="https://venta.renfe.com/vol/inicioAnulacion.do?Idioma=es&Pais=ES&inirenfe=SI">ANULACIONES</a></li>
+				<li><a href="https://venta.renfe.com/vol/indiceAbonos.do?Idioma=es&Pais=ES&inirenfe=SI">ABONOS/BONO AVE</a></li>
+				<li><a href="https://venta.renfe.com/vol/formViajes.do">MIS VIAJES</a></li>
+				<li><a href="https://venta.renfe.com/vol/operReservas.do">COMPRA CON LOCALIZADOR</a></li>
+				<li><a href="https://venta.renfe.com/vol/inicioVtm.do">COMPRA MULTIPLE</a></li>
+			</ul>
+		</div>
+		<div class="columna2">
+			<div class="titulo">
+				OTROS PRODUCTOS RENFE
+			</div>
+			<ul class="ops">
+				<li><a href="http://www.renfe.com/viajeros/viajes_internacionales/index.html">VIAJES INTERNACIONALES</a></li>
+				<li><a href="http://www.renfe.com/viajeros/viajes_internacionales/index.html">RENFE SPAIN PASS</a></li>
+				<li><a href="http://www.renfe.com/trenesturisticos/index.html">TRENES TURISTICOS</a></li>
+				<li><a href="https://venta.renfe.com/vol/trenesTuriIni.do?cdgoIdentificador=OCNT&Idioma=es&Pais=ES&inirenfe=SI">TRENES TEMATICOS</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+<div id="footer">
+	<div id="divfooter1linea">
+		<div id="divdescargateapps">
+			<a class="simplegray" > Descargate nuestras apps! &nbsp;</a>
+			<a href="http://www.renfe.com/viajeros/movilidad/renfeticket/descarga.html">
+				<img class="fotosapps" src="images/ico1.png" alt="app1">
+				
+			<a class="simplegray" >&nbsp;</a>
+			<a href="http://www.renfe.com/viajeros/movilidad/app_cercanias.html	">
+			<img class="fotosapps" href="https://play.google.com/store" src="images/ico2.png" alt="app2">
+			</a>
+			<a class="simplegray" >&nbsp;</a>
+			<a href="http://renfe.mobi/renfev2/inicio.do">
+			<img class="fotosapps" href="https://play.google.com/store" src="images/ico3.png" alt="app3">
+			</a>
+		</div>
+
+		<div id="divsiguenosen">
+			<a class="simplegray" > Siguenos en: &nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icofb.png" alt="app1">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icotw.png" alt="app2">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icoyt.png" alt="app3">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icor1.png" alt="app3">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icor2.png" alt="app3">
+
+
+
+
+
+
+		</div>
+
+
+	</div>
+	<div id="divfooternav">
+
+
+		<div id="nav">
+			<ul>
+				<li><a href="http://www.renfe.com/viajeros/atendo/index.html">Atendo</a></li>
+				<li><a href="http://www.renfe.com/viajeros/tarifas/grupos.html">Grupos</a></li>
+				<li><a href="http://www.renfe.com/empresa/comunicacion/incidencias.html">Avisos</a></li>
+				<li><a href="http://www.renfe.com/empresa/comunicacion/index.html">Prensa</a></li>
+				<li><a href="http://www.renfe.com/empresa/atencion_cliente/index.html">Atencion al cliente</a></li>
+				<li><a href="https://agencias.renfe.com/vol/agencias.do">Agencias</a></li>
+				<li><a href="http://www.renfe.com/empresa/informacion_legal/politica_cookies.html">Politica de cookies</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="divcentrarfooter">
+		<div id="divimagenabajofooter1">
+			<img id="imagenrenfe" src="images/ico4.png" alt="Logo renfe">
+
+		</div>
+		<div id="divrellenofooter">
+			<div id="divtextoconenlaces">
+				<div id="divmargintextotop">
+					<a class="simple" href="http://www.renfe.com/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad &nbsp;</a>
+					<a class="simple" href="http://www.renfe.com/empresa/informacion_legal/index.html"> Informacion legal &nbsp;</a>
+					<a class="simple" href="http://www.renfe.com/mapa.html"> Mapa web &nbsp;</a>
+
+				</div>
+			</div>
+			<div id="divtextosinenlaces">
+				<div id="divmargintextotop">
+					 @Renfe. Todos los derechos reservados 
+
+
+				</div>
+			</div>
+		</div>
+		<div id="divimagenabajofooter2">
+			<img id="imagengobesp" src="images/ico5.png" alt="Logo gobierno">
+
+
+		</div>	
+	</div>
+
+</footer>
+
+
+
+</html>

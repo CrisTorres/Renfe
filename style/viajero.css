@@ -1,0 +1,162 @@
+#resumenCompra{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin: 30px 0;
+//	position: relative;
+}
+.billete{
+	
+	background-image: url(".././images/billete2.png");
+	background-repeat:no-repeat;
+	width: 40%;
+	margin-top: 20px;
+	overflow: hide;
+	height: 300px;
+}
+.b1 {
+	float:left;
+	margin-left: 10%;
+}
+.b2{
+	float:right;
+//	margin-right: 10%;
+}
+.billete h2{
+	margin-top: 70px;
+	margin-left: 30px;
+	color: purple;
+}
+.lineaBillete pre{
+//	width: 100%;
+	margin-top: 10px;
+	margin-left: 30px;
+	font-size: 16px;
+}
+.lineaBillete pre b{
+	color: purple;
+}
+#infoViajero {
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	margin: 25px 10%;
+}
+#infoViajero > h3 {
+	margin-bottom:10px;
+}
+
+#capsula1{
+	margin-bottom:10px;
+	width:315px;
+	float:left;
+}
+#capsula2{
+	margin-top:40px;
+	width:auto;
+	margin-left:0;
+}
+#capsula3{
+	margin-bottom:3px;
+	width:auto;
+
+}
+#capsula4{
+	margin-bottom:3px;
+	width:auto;
+
+}
+#capsula5{
+	margin-bottom:3px;
+	width:auto;
+}
+.viajero{
+	width: 100%;
+	border: 2px solid purple;
+	border-radius: 10px;
+}
+.cabecera {
+	padding: 15px 50px;
+	border-bottom: 1px dotted grey;
+}
+.cabecera h3{
+	padding-bottom: 10px;
+}
+.cabecera input{
+	margin-right: 60px;
+	margin-left: 5px;
+}
+.tarjeta{
+	margin-top: 20px;
+	color:purple;
+}
+
+
+.submit_section h4{
+	width: 50%;
+	margin-top: 15px;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 1270px) {
+.b1 {
+	float:left;
+	margin-left:22%;
+}
+.b2{
+	float:left;
+	margin-left:22%;
+}
+.billete{
+	background-image: url(".././images/billete2.png");
+	background-repeat:no-repeat;
+	width: 75%;
+	margin-top: 5px;
+	height: 300px;
+	overflow: hide;
+	
+}
+
+}
+
+@media only screen and (max-width: 1270px) {
+	
+	#infoViajero {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin: 0;
+
+}
+.viajero{
+	width: 100%;
+	border: 2px solid purple;
+	border-radius: 0;
+	margin-bottom:15px;
+	box-shadow: inset 0 0 4px purple;
+}
+.titinfoviajero{
+	text-align:center;
+	
+}
+	
+	}
+	
+#name-err{
+	margin-left: 0px;
+	display: none;
+	color: red;
+}
+
+#doc-err{
+	display: none;
+	color: red;
+}
+
+#submit{
+	background-color: purple;
+	color:white;
+	padding:5px;
+}

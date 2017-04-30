@@ -1,0 +1,386 @@
+
+
+#tabs {
+	width: 60%;
+	height: auto;
+	float: left;
+	margin: 0 0 50px 20%;
+}
+
+#tabs ul li{
+	float: left;
+	list-style: none;
+	padding: 10px 25px;
+	background-color: lightgray;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-style: solid;
+	border-color: #800080;
+}
+
+#tabs h3{
+	color: #800080;
+}
+
+#tabs ul li a {
+	text-decoration: none;
+}
+
+.width-lg{
+	width: 100%;
+}
+
+#tabs-1, #tabs-2, #tabs-3{
+	height: auto;
+	overflow: auto;
+	float: left;
+	padding: 15px 25px;
+	background-color: #fff;
+	border-style: solid;
+	border-color: #800080;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#tabs .ui-tabs-active {
+  background: #fff;
+}
+
+.tab-icon{
+	width: 100px;
+	height: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#credit_card{
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	margin: 25px 10% 0 10%;
+}
+
+#div-1{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+.div_size {
+	width: 50%;
+}
+
+#card_number{
+	float: left;
+	height: auto;
+	overflow: auto;
+}
+
+#card_name{
+	float: left;
+	height: auto;
+	overflow: auto;
+}
+
+#c-div-1-err{
+	display: none;
+	color: red;
+}
+
+#div-2{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#card_exp{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#card_cvv{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#buyer_data{
+	margin-top: 25px;
+}
+
+#c-div-2-err{
+	display: none;
+	color: red;
+	margin-left: 50%;
+}
+
+#div-3{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#buy_email{
+	float: left;
+	width: 40%;
+	height: auto;
+	overflow: auto;
+}
+
+#buy_prefix{
+	float: left;
+	width: 20%;
+	height: auto;
+	overflow: auto;
+}
+
+#buy_prefix_in{
+	width: 40%;
+}
+
+#buy_phone{
+	float: left;
+	width: 40%;
+	height: auto;
+	overflow: auto;
+}
+
+#div-4{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#c-submit{
+	margin-top: 25px;
+	background-color: purple;
+	color:white;
+	padding:5px;
+}
+#r-submit{
+	margin-top: 25px;
+	background-color: purple;
+	color:white;
+	padding:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----*/
+#renfe_plus{
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	margin: 25px 10% 0 10%;
+}
+
+#r-div-1{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#card_type{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#card_no{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#r-div-1-err{
+	display: none;
+	color: red;
+}
+
+
+#r-div-2{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#card_dni{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#buyer_data{
+	margin-top: 25px;
+}
+
+#r-div-2-err{
+	display: none;
+	color: red;
+}
+
+#r-div-3{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#buy_email{
+	float: left;
+	width: 40%;
+	height: auto;
+	overflow: auto;
+}
+
+#buy_prefix{
+	float: left;
+	width: 20%;
+	height: auto;
+	overflow: auto;
+}
+
+#buy_prefix_in{
+	width: 40%;
+}
+
+#buy_phone{
+	float: left;
+	width: 40%;
+	height: auto;
+	overflow: auto;
+}
+
+#r-div-4{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#r-submit{
+	margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#paypal{
+	width: 80%;
+	height: auto;
+	overflow: auto;
+	margin: 25px 10% 0 10%;
+}
+
+#p-div-1{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#pp_logo{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#pp_mark{
+	float: left;
+	width: 50%;
+	height: auto;
+	overflow: auto;
+}
+
+#p-div-2{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}
+
+#buy_email{
+	float: left;
+	width: 40%;
+	height: auto;
+	overflow: auto;
+}
+
+#buy_prefix{
+	float: left;
+	width: 20%;
+	height: auto;
+	overflow: auto;
+}
+
+#buy_prefix_in{
+	width: 40%;
+}
+
+#buy_phone{
+	float: left;
+	width: 40%;
+	height: auto;
+	overflow: auto;
+}
+
+#p-div-3{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-top: 25px;
+}

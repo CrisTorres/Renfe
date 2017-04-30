@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Renfe </title>
+	<meta name="description" content="Seleccion billete RENFE">
+	<meta name="keywords" content="Rediseño RENFE">
+	<meta name="author" content="Grupos 3 y 4">
+	<meta charset="es_ES.UTF-8">
+	<link rel="stylesheet" type="text/css" href="./style/viajero.css">	
+	<link rel="stylesheet" type="text/css" href="./style/navegacion.css">
+	<!-- css para el menu -->
+	<link rel="stylesheet" type="text/css" href="./style/styleRenfe.css">
+	<link rel="stylesheet" href="style/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+	
+	<link rel="stylesheet" type="text/css" href="style/styleTab.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="js/val_script_credit.js"></script>
+	<script src="js/val_script_renfe.js"></script>
+	 <script>
+		$(function() {
+		$( "#tabs" ).tabs();
+		});
+	</script>
+
+	
+</head>
+<body>
+
+	<div id="header">
+		<div class="logo">
+			<a href="renfe.html">
+				<img src="./images/logoRenfe.png" alt="Logo Renfe">
+			</a>			
+		</div>
+		<div class="id">
+			<p class="morado">IDENTIFÍCATE</p>
+			<input class="idform" type="text" placeholder="Usuario" size="15">
+			<input class="idform" type="text" placeholder="Contraseña" size="15">
+			<a class="morado" href="">ENTRAR</a>
+			<br>
+			<a class="morado" href="">Registrarse</a>
+			<a class="cont" href="">He olvidado mi contraseña</a>
+
+		</div>
+		<div id="ayuda">
+			<a href="http://consulta.renfe.com/base/main;jsessionid=764E188D421D06A337872664E707C191">
+				<img src="./images/ayuda.png" alt="Ayuda">
+				<p class="morado"> <b>¿NECESITAS AYUDA?</b></p>
+
+			</a>
+			<br>
+			Idioma : 
+			<select>
+				<option value="Español">Español</option>
+				<option value="English">English</option>
+				<option value="Français">Français</option>
+				<option value="Catalá">Catalá</option>
+				<option value="Galego">Galego</option>
+				<option value="Euskera">Euskera</option>
+				<option value="Valenciá">Valenciá</option>
+			</select>
+		</div>
+		<div id="menu">
+			<ul class="men">
+				<li><a href="http://www.renfe.com/viajeros/cercanias/index.html">Cercanías</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/index.html">Precios</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/madrid/index.html">Madrid</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/barcelona/index.html">Barcelona</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/index.html">Resto comunidades</a></li>
+					</ul>
+				</li>	
+				<li><a href="http://www.renfe.com/WebOfertaComercial/jsp/homeOfertaComercialLarga.jsp?destacado=N">Larga distancia</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/index.html">AVE</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/altaria.html">Altaria</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/alvia.html">Alvia</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/AVCity.html">AV City</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/talgo.html">Talgo</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/trenhotel.html">Trenhotel</a></li>
+					</ul>
+
+				</li>
+				<li><a href="http://www.renfe.com/viajeros/info/index.html">Información viajeros</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/info/index.html">Equipaje</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/animales.html">Animales</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/bicicletas.html">Bicicletas</a></li>
+						<li><a href="http://www.renfe.com/viajeros/atendo/index.html">ATENDO</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/aparcamiento.html">Aparcamiento</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.renfe.com/empresa/index.html">Grupo Renfe</a>
+					<ul>
+						<li><a href="http://www.renfe.com/empresa/organizacion/index.html">Quienes somos</a></li>
+						<li><a href="http://www.renfe.com/empresa/organizacion/memoria.html">Información económica</a></li>
+						<li><a href="http://www.renfe.com/empresa/empleo_y_formacion/index.html">Empleo</a></li>
+						<li><a href="http://www.renfe.com/empresa/empleo_y_formacion/BECAS_BolsasReservaMaquinistas.html">Formación</a></li>
+					</ul>
+
+				</li>
+
+			</ul>
+
+		</div>
+	</div>
+	<div class="linea"></div>
+	<div id="navegacion">
+		<div id="flecha">
+			<a href="viajero.html"><img src="./images/volver.png" alt=""></a>
+		</div>
+		<div id="proceso">
+			<div class="texto">
+				<a href="billete.html">Elegir billete</a>
+				<a href="viajero.html">Datos viajeros</a>
+				<b class="seleccionada">Realizar pago</b>
+				<a href="">Confirmacion</a>
+			</div>
+			<div class="iconos">
+				<a href="billete.html">
+					<img src="./images/comprarBillete.png" alt="">
+				</a>				
+				<img class="flecha" src="./images/flechaLlena.png" alt="" style="width:80px; height:25px ">
+				<a href="viajero.html">
+					<img src="./images/viajero.jpg" alt="">		
+				</a>	
+				<img class="flecha" src="./images/flechaVacia.png" alt="" style="width:80px; height:25px ">
+				
+					<img src="./images/pago.jpg" alt="">
+				
+				
+				<img class="flecha" src="./images/flechaVacia.png" alt="" style="width:80px; height:25px ">
+				<a href="">
+					<img src="./images/ok.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="faq">
+			<a href="https://ssl.renfe.com/comprabilletes/faq_ES.html"><h2>FAQ</h2></a>
+		</div>
+	</div>
+	<div id="resumenCompra">
+		<div class="billete b1">
+			<h2>Billete de ida</h2>
+			<div class="lineaBillete">
+				<pre> <b>Salida:</b> 	MADIRD 10:00</pre>
+			</div>
+			<div class="lineaBillete">
+				<pre> <b>Llegada:</b> 	BARCELONA 12:00</pre>
+			</div>
+			<div class="lineaBillete">
+				<pre> 1 ADULTO</pre>
+			</div>
+		</div>
+		<div class="billete b2">
+			<h2>Billete de vuelta</h2>
+			<div class="lineaBillete">
+				<pre> <b>Salida:</b> 	BARCELONA 15:20</pre>
+			</div>
+			<div class="lineaBillete">
+				<pre> <b>Llegada:</b> 	MADRID 17:55</pre>
+			</div>
+			<div class="lineaBillete">
+				<pre> 1 ADULTO</pre>
+			</div>
+		</div>
+
+	</div>
+	
+	<div id="tabs">
+
+		<ul>
+			<li><a href="#tabs-1"><img class="tab-icon" id="credit-card-icon" src="images/credit-card.png" alt="credit-card-icon"></a></li>
+			<li><a href="#tabs-2"><img class="tab-icon" id="renfe-card-icon" src="images/renfe-icon.jpg" alt="renfe-card-icon"></a></li>
+			<li><a href="#tabs-3"><img <img class="tab-icon" id="pp-logo-icon" src="images/pp-logo.png" alt="pp-logo-icon"></a></li>
+		</ul>
+
+
+
+
+		<div class="width-lg" id="tabs-1">
+			<form action="www.google.es" id="credit_card">
+
+
+				<h3>TARJETA DE CREDITO</h3>
+				<div id="div-1">
+					<div  class="div_size" id="card_number">
+						<label for="card_number_in" id="card_number_lb">Numero de tarjeta(*)</label>
+						<input type="text" id="card_number_in">
+					</div>
+					<div  class="div_size" id="card_name">
+						<label for="card_name_in" id="card_name_lb">Titular de la tarjeta(*)</label>
+						<input type="text" id="card_name_in">
+					</div>
+				</div>
+				<h4 id="c-div-1-err">Este campo no puede estar vacio</h4>
+
+
+				<div id="div-2">
+					<div id="card_exp">
+						<label for="card_exp_in" id="card_exp_lb">Fecha de caducidad</label>
+						<select id="cad_month">
+						  <option value="volvo">ENERO</option>
+						  <option value="saab">FEBRERO</option>
+						  <option value="opel">MARZO</option>
+						  <option value="audi">ABRIL</option>
+						  <option value="volvo">MAYO</option>
+						  <option value="saab">JUNIO</option>
+						  <option value="opel">JULIO</option>
+						  <option value="audi">AGOSTO</option>
+						  <option value="volvo">SEPTIEMBRE</option>
+						  <option value="saab">OCTUBRE</option>
+						  <option value="opel">NOVIEMBRE</option>
+						  <option value="audi">DICIEMBRE</option>
+						</select>
+						<select id="cad_year">
+						  <option value="volvo">2015</option>
+						  <option value="saab">2016</option>
+						  <option value="opel">2017</option>
+						  <option value="audi">2018</option>
+						</select>
+					</div>
+					<div id="card_cvv">
+						<label for="card_cvv_in" id="card_cvv_lb">CVV/CID(*)</label>
+						<input type="text" id="card_cvv_in">
+						<a href="http://www.w3schools.com">Que es el CVV/CID?</a>
+					</div>
+				</div>
+				<h4 id="c-div-2-err">Este campo no puede estar vacio</h4>
+
+
+
+				<h3 id="buyer_data">DATOS DEL COMPRADOR</h3>
+				<div id="div-3">
+					<div id="buy_email">
+						<label for="buy_email_in" id="buy_email_lb">Email</label>
+						<input type="text" id="buy_email_in">
+					</div>
+					<div id="buy_prefix">
+						<label for="buy_prefix_in" id="buy_prefix_lb">Prefijo</label>
+						<input type="text" id="buy_prefix_in" placeholder="+34">
+					</div>
+					<div id="buy_phone">
+						<label for="buy_phone_in" id="buy_phone_lb">Telefono</label>
+						<input type="text" id="buy_phone_in">
+					</div>
+				</div>
+				<div id="div-4">
+					<input type="radio" name="promo-renfe" value="">No recibir comunicaciones publicitarias de RENFE-viajeros
+				</div>
+				<div >
+					<button id="c-submit" type="button" onClick="return validate_credit()">FINALIZAR</button>
+				</div>
+			</form>
+		</div>
+
+
+
+
+
+
+		<div class="width-lg" id="tabs-2">
+			<form id="renfe_plus">
+
+
+				<h3>RENFE+</h3>
+				<div id="r-div-1">
+					<div  class="div_size" id="card_type">
+						<label for="card_type_in" id="card_type_lb">Numero de tarjeta(*)</label>
+						<input type="text" id="card_type_in">
+					</div>
+					<div  class="div_size" id="card_number">
+						<label for="card_no_in" id="card_no_lb">Titular de la tarjeta(*)</label>
+						<input type="text" id="card_no_in">
+					</div>
+				</div>
+				<h4 id="r-div-1-err">Este campo no puede estar vacio</h4>
+
+
+
+				<div id="r-div-2">
+					<div id="card_dni">
+						<label for="card_dni_in" id="card_dni_lb">Documento  (DNI / NIF / NIE ...) (*)</label>
+						<input type="text" id="card_dni_in">
+					</div>
+				</div>
+				<h4 id="r-div-2-err">Este campo no puede estar vacio</h4>
+
+
+
+				<h3 id="buyer_data">DATOS DEL COMPRADOR</h3>
+				<div id="r-div-3">
+					<div id="buy_email">
+						<label for="buy_email_in" id="buy_email_lb">Email</label>
+						<input type="text" id="buy_email_in">
+					</div>
+					<div id="buy_prefix">
+						<label for="buy_prefix_in" id="buy_prefix_lb">Prefijo</label>
+						<input type="text" id="buy_prefix_in" placeholder="+34">
+					</div>
+					<div id="buy_phone">
+						<label for="buy_phone_in" id="buy_phone_lb">Telefono</label>
+						<input type="text" id="buy_phone_in">
+					</div>
+				</div>
+				<div id="r-div-4">
+					<input type="radio" name="promo-renfe" value="">No recibir comunicaciones publicitarias de RENFE-viajeros
+				</div>
+
+				<button id="r-submit" type="button" onClick="return validate_renfe()">FINALIZAR</button>
+
+			</form>
+		</div>
+
+
+
+
+
+
+		<div class="width-lg" id="tabs-3">
+			<form id="paypal">
+
+
+				<h3>PAYPAL</h3>
+				<div id="p-div-1">
+					<div id="pp_logo">
+						<img id="pp-logo-icon" src="images/pp-logo.png">
+					</div>
+					<div id="pp_mark">
+						<h4>Paga de manera rapida y sencilla con tu cuenta paypal</h4> 
+					</div>
+				</div>
+
+
+
+				<h3 id="buyer_data">DATOS DEL COMPRADOR</h3>
+				<div id="p-div-2">
+					<div id="buy_email">
+						<label for="buy_email_in" id="buy_email_lb">Email</label>
+						<input type="text" id="buy_email_in">
+					</div>
+					<div id="buy_prefix">
+						<label for="buy_prefix_in" id="buy_prefix_lb">Prefijo</label>
+						<input type="text" id="buy_prefix_in" placeholder="+34">
+					</div>
+					<div id="buy_phone">
+						<label for="buy_phone_in" id="buy_phone_lb">Telefono</label>
+						<input type="text" id="buy_phone_in">
+					</div>
+				</div>
+
+
+
+				<div id="p-div-3">
+					<input type="radio" name="promo-renfe" value="">No recibir comunicaciones publicitarias de RENFE-viajeros
+				</div>
+
+
+
+			</form>
+		</div>
+	</div>
+	<!--<div id="infoViajero">
+		<h3>MODO DE PAGO</h3>
+		<div class="viajero">
+			<div class="cabecera">
+				<h3>Viajero 1</h3>
+				<h4>Adulto</h4>
+			</div>
+			<div class="cabecera">
+				Nombre(*)
+				<input type="text" name="nombre">
+				Apellido1(*)
+				<input type="text" name="nombre">
+				Apellido2
+				<input type="text" name="nombre">
+				<br><br>
+				Email
+				<input type="text" name="nombre" size="50">
+				<br><br>
+				Documento de identidad(*)
+				<input type="text" name="nombre" size="20" style="margin-right:15px">
+				<select>
+					<option value="Español">DNI</option>
+					<option value="English">Pasaporte</option>
+				</select>
+				<br><br>
+				Telefono
+				<input type="text" name="nombre" size="20">
+				<div class="tarjeta">
+					<h3 >Tarjeta +Renfe</h3>
+				</div>
+				Numero de tarjeta	
+				<input type="text" name="nombre" size="30">		
+			</div>
+
+		</div>	-->	
+	</body>
+	
+	
+	
+	<div id="footer">
+	<div id="divfooter1linea">
+		<div id="divdescargateapps">
+			<a class="simplegray" > Descargate nuestras apps! &nbsp;</a>
+			<a href="http://www.renfe.com/viajeros/movilidad/renfeticket/descarga.html">
+				<img class="fotosapps" src="images/ico1.png" alt="app1">
+				
+			<a class="simplegray" >&nbsp;</a>
+			<a href="http://www.renfe.com/viajeros/movilidad/app_cercanias.html	">
+			<img class="fotosapps" href="https://play.google.com/store" src="images/ico2.png" alt="app2">
+			</a>
+			<a class="simplegray" >&nbsp;</a>
+			<a href="http://renfe.mobi/renfev2/inicio.do">
+			<img class="fotosapps" href="https://play.google.com/store" src="images/ico3.png" alt="app3">
+			</a>
+		</div>
+
+		<div id="divsiguenosen">
+			<a class="simplegray" > Siguenos en: &nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icofb.png" alt="app1">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icotw.png" alt="app2">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icoyt.png" alt="app3">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icor1.png" alt="app3">
+			<a class="simplegray" >&nbsp;</a>
+			<img  href="https://play.google.com/store" src="images/icor2.png" alt="app3">
+
+
+
+
+
+
+		</div>
+
+
+	</div>
+	<div id="divfooternav">
+
+
+		<div id="nav">
+			<ul>
+				<li><a href="http://www.renfe.com/viajeros/atendo/index.html">Atendo</a></li>
+				<li><a href="http://www.renfe.com/viajeros/tarifas/grupos.html">Grupos</a></li>
+				<li><a href="http://www.renfe.com/empresa/comunicacion/incidencias.html">Avisos</a></li>
+				<li><a href="http://www.renfe.com/empresa/comunicacion/index.html">Prensa</a></li>
+				<li><a href="http://www.renfe.com/empresa/atencion_cliente/index.html">Atencion al cliente</a></li>
+				<li><a href="https://agencias.renfe.com/vol/agencias.do">Agencias</a></li>
+				<li><a href="http://www.renfe.com/empresa/informacion_legal/politica_cookies.html">Politica de cookies</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="divcentrarfooter">
+		<div id="divimagenabajofooter1">
+			<img id="imagenrenfe" src="images/ico4.png" alt="Logo renfe">
+
+		</div>
+		<div id="divrellenofooter">
+			<div id="divtextoconenlaces">
+				<div id="divmargintextotop">
+					<a class="simple" href="http://www.renfe.com/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad &nbsp;</a>
+					<a class="simple" href="http://www.renfe.com/empresa/informacion_legal/index.html"> Informacion legal &nbsp;</a>
+					<a class="simple" href="http://www.renfe.com/mapa.html"> Mapa web &nbsp;</a>
+
+				</div>
+			</div>
+			<div id="divtextosinenlaces">
+				<div id="divmargintextotop">
+					 @Renfe. Todos los derechos reservados 
+
+
+				</div>
+			</div>
+		</div>
+		<div id="divimagenabajofooter2">
+			<img id="imagengobesp" src="images/ico5.png" alt="Logo gobierno">
+
+
+		</div>	
+	</div>
+
+</footer>
+	</html>	

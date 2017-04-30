@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Seleccion de billetes </title>
+	<meta name="description" content="Seleccion billete RENFE">
+	<meta name="keywords" content="Rediseño RENFE">
+	<meta name="author" content="Grupos 3 y 4">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./style/billete.css">
+	<link rel="stylesheet" type="text/css" href="./style/styleRenfe.css">
+	<link rel="stylesheet" type="text/css" href="./style/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="./style/navegacion.css">
+	<!-- Barras deslizantes-->
+	<link href="style/jquery-ui.css" rel="stylesheet">
+	<script src="jquery/jquery-1.11.3.min.js"></script>
+	<script src="jquery/jquery-ui.js"></script>
+	<script src="js/scriptBillete.js"></script>
+	<script src="js/scriptCompra.js"></script>
+	<!-- Seleccion billete -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style/bootstrap.css">
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!--Fecha-->
+	<script src="js/script2.js"></script>
+	<link rel="stylesheet" href="style/datepicker.css">		
+
+	
+</head>
+<body>
+
+	<div id="header">
+		<div class="logo">
+			<a href="renfe.html">
+				<img src="./images/logoRenfe.png" alt="Logo Renfe">
+			</a>			
+		</div>
+		<div class="id">
+			<p class="morado">IDENTIFÍCATE</p>
+			<input class="idform" type="text" placeholder="Usuario" size="15">
+			<input class="idform" type="text" placeholder="Contraseña" size="15">
+			<a class="morado" href="">ENTRAR</a>
+			<br>
+			<a class="morado" href="">Registrarse</a>
+			<a class="cont" href="">He olvidado mi contraseña</a>
+
+		</div>
+		<div id="ayuda">
+			<a href="http://consulta.renfe.com/base/main;jsessionid=764E188D421D06A337872664E707C191">
+				<img src="./images/ayuda.png" alt="Ayuda">
+				<p class="morado"> <b>¿NECESITAS AYUDA?</b></p>
+
+			</a>
+			
+			<br>
+			Idioma : 
+			<select>
+				<option value="Español">Español</option>
+				<option value="English">English</option>
+				<option value="Français">Français</option>
+				<option value="Catalá">Catalá</option>
+				<option value="Galego">Galego</option>
+				<option value="Euskera">Euskera</option>
+				<option value="Valenciá">Valenciá</option>
+			</select>
+		</div>
+		<div id="menu">
+			<ul class="men">
+				<li><a href="http://www.renfe.com/viajeros/cercanias/index.html">Cercanías</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/index.html">Precios</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/madrid/index.html">Madrid</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/barcelona/index.html">Barcelona</a></li>
+						<li><a href="http://www.renfe.com/viajeros/cercanias/index.html">Resto comunidades</a></li>
+					</ul>
+				</li>	
+				<li><a href="http://www.renfe.com/WebOfertaComercial/jsp/homeOfertaComercialLarga.jsp?destacado=N">Larga distancia</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/index.html">AVE</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/altaria.html">Altaria</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/alvia.html">Alvia</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/AVCity.html">AV City</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/talgo.html">Talgo</a></li>
+						<li><a href="http://www.renfe.com/viajeros/larga_distancia/productos/trenhotel.html">Trenhotel</a></li>
+					</ul>
+
+				</li>
+				<li><a href="http://www.renfe.com/viajeros/info/index.html">Información viajeros</a>
+					<ul>
+						<li><a href="http://www.renfe.com/viajeros/info/index.html">Equipaje</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/animales.html">Animales</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/bicicletas.html">Bicicletas</a></li>
+						<li><a href="http://www.renfe.com/viajeros/atendo/index.html">ATENDO</a></li>
+						<li><a href="http://www.renfe.com/viajeros/info/aparcamiento.html">Aparcamiento</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.renfe.com/empresa/index.html">Grupo Renfe</a>
+					<ul>
+						<li><a href="http://www.renfe.com/empresa/organizacion/index.html">Quienes somos</a></li>
+						<li><a href="http://www.renfe.com/empresa/organizacion/memoria.html">Información económica</a></li>
+						<li><a href="http://www.renfe.com/empresa/empleo_y_formacion/index.html">Empleo</a></li>
+						<li><a href="http://www.renfe.com/empresa/empleo_y_formacion/BECAS_BolsasReservaMaquinistas.html">Formación</a></li>
+					</ul>
+
+				</li>
+
+			</ul>
+
+		</div>
+	</div>
+	<div class="linea"></div>
+	<div id="navegacion">
+		<div id="flecha">
+			<a href="renfe.html"><img src="./images/volver.png" alt=""></a>
+		</div>
+		<div id="proceso">
+			<div class="texto">
+				<b class="seleccionada">Elegir billete</b>
+				<a href="viajero.html">Datos viajeros</a>
+				<a href="pago.html">Realizar pago</a>
+				<a href="">Confirmacion</a>
+			</div>
+			<div class="iconos">
+				
+				<img src="./images/comprarBillete.png" alt="Billete">
+
+				<img class="flecha" src="./images/flechaVacia.png" alt="Flecha" style="width:80px; height:25px ">
+				<a href="viajero.html">
+					<img src="./images/viajero.jpg" alt="Datos viajero">		
+				</a>	
+				<img class="flecha" src="./images/flechaVacia.png" alt="" style="width:80px; height:25px ">
+				<a href="pago.html">
+					<img src="./images/pago.jpg" alt="Pago">
+				</a>
+				
+				<img class="flecha" src="./images/flechaVacia.png" alt="" style="width:80px; height:25px ">
+				<a href="">
+					<img src="./images/ok.png" alt="Confirmacion">
+				</a>
+				
+
+			</div>
+
+		</div>
+		<div class="faq">
+			<a href="https://ssl.renfe.com/comprabilletes/faq_ES.html"><h2>FAQ</h2></a>
+		</div>
+
+	</div>
+	<div id="filtros">
+		
+		<h3>FILTROS</h3>
+		
+		<div class="apartado">
+			<h5 class="sub">HORARIO DE IDA</h5>
+			<h5>Salida </h5>
+			<p>
+				<input type="text" id="amount1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+
+				<div id="slider-range1"></div>
+			</p>
+			
+
+			<h5>Llegada </h5>
+			<p>
+				<input type="text" id="amount2" readonly style="border:0; color:#f6931f; font-weight:bold;">			
+				<div id="slider-range2"></div>		
+			</p>
+
+		</div>
+		<div class="apartado">
+			<h5 class="sub">HORARIO DE VUELTA</h5>
+			<h5>Salida </h5>
+			<p>
+				<input type="text" id="amount3" readonly style="border:0; color:#f6931f; font-weight:bold;">			
+				<div id="slider-range3"></div>		
+			</p>
+			<h5>Llegada </h5>
+			<p>
+				<input type="text" id="amount4" readonly style="border:0; color:#f6931f; font-weight:bold;">			
+				<div id="slider-range4"></div>		
+			</p>
+		</div>
+		<div class="apartado">
+			<h4>PRECIOS €</h4>
+			<p>
+				<input type="text" id="amount5" readonly style="border:0; color:#f6931f; font-weight:bold;">			
+				<div id="slider-range5"></div>		
+			</p>
+		</div>
+		<div class="apartado">
+			<h4>CLASE</h4>
+			<div class="izda">
+				<input type="checkbox" class="check" name="preferente"> Preferente
+				<br>
+				<input type="checkbox" class="check" name="preferente"> Turista
+				<br>
+				<input type="checkbox" class="check" name="preferente"> Turista Plus
+				<br>
+				<input type="checkbox" class="check" name="preferente"> Turista con enlace
+			</div>
+		</div>
+		<div class="apartado">
+			<h4>TIPO DE TRAYECTO</h4>
+			<div class="izda">
+				<input type="checkbox" class="check" name="preferente"> Mostrar sin paradas intermedias
+			</div>
+		</div>
+		<div class="apartado">
+			<h4>PRESTACIONES</h4>
+			<div class="izda">
+				<input type="checkbox" class="check" name="preferente"> Coche en silencio
+				<br>
+				<input type="checkbox" class="check" name="preferente"> Mesa de 4
+				<br>
+				<input type="checkbox" class="check" name="preferente"> Menu abordo
+			</div>
+			<button onclick="limpiarFormulario()">LIMPIAR FORMUlARIO </button>
+		</div>
+	</div>
+	
+	<div id="principal">
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#ida" aria-controls="ida" role="tab" data-toggle="tab">
+				<p class="infoBillete"><b>BILLETE DE IDA</b></p>
+				<p class="infoBillete"><b>MADRID</b></p>
+				<p class="infoBillete"><b>A</b></p>
+				<p class="infoBillete"><b>BARCELONA</b></p>
+				<input class="datepicker" type="text" name="regreso" style="margin-left:5px" value="24/12/2015">
+				<img src="images/iconoCalendario.png" alt="" style="width:20px; height:20px">
+			</a></li>
+			<li role="presentation"><a href="#vuelta" aria-controls="vuelta" role="tab" data-toggle="tab">
+				<p class="infoBillete"><b>BILLETE DE VUELTA</b></p>
+				<p class="infoBillete"><b>BARCELONA</b></p>
+				<p class="infoBillete"><b>A</b></p>
+				<p class="infoBillete"><b>MADRID</b></p>
+				<input class="datepicker" type="text" name="regreso" style="margin-left:5px" value="31/12/2015">
+				<img src="images/iconoCalendario.png" alt="" style="width:20px; height:20px">
+			</a></li>
+		</ul>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="ida">
+				<div class="cabeceras">
+					<div class="nombre">
+						Salida
+					</div>
+					<div class="nombre">
+						Llegada
+					</div>
+					<div class="nombre">
+						Duracion
+					</div>
+					<div class="nombre">
+						Tren
+					</div>
+					<div class="nombre">
+						Clase
+					</div>
+					<div class="nombre">
+						Tarifa
+					</div>
+					<div class="nombre">
+						Precio
+					</div>
+				</div>
+				<div class="entrada">
+					<div class="infoEntrada">
+						15:00h
+					</div>
+					<div class="infoEntrada">
+						17:30h
+					</div>
+					<div class="infoEntrada">
+						2h 30min
+					</div>
+					<div class="infoEntrada">
+						AVE
+					</div>
+					<div class="infoEntrada">
+						Turista 
+					</div>
+					<div class="infoEntrada">
+						Promo
+					</div>
+					
+					<div class="infoEntrada precio">
+						<p>125€</p>
+						<button onclick="comprar('IDA', 'Madrid', 'Barcelona', '15:00h', '17:30h', 'AVE', 'Turista', '125', '24/12/2015')"> COMPRAR</button>
+					</div>	
+				</div>
+				<div class="entrada">
+					<div class="infoEntrada">
+						17:30h
+					</div>
+					<div class="infoEntrada">
+						18:45h
+					</div>
+					<div class="infoEntrada">
+						1h 15min
+					</div>
+					<div class="infoEntrada">
+						AVE
+					</div>
+					<div class="infoEntrada">
+						Turista Plus
+					</div>
+					<div class="infoEntrada">
+						Promo
+					</div>
+					
+					<div class="infoEntrada precio">
+						<p>100€</p>
+						<button onclick="comprar('IDA', 'Madrid', 'Barcelona', '17:30h', '18:45h', 'AVE', 'Turista Plus', '100', '24/12/2015')"> COMPRAR</button>
+					</div>	
+				</div>
+				<div class="entrada">
+					<div class="infoEntrada">
+						19:45h
+					</div>
+					<div class="infoEntrada">
+						21:40h
+					</div>
+					<div class="infoEntrada">
+						1h 55min
+					</div>
+					<div class="infoEntrada">
+						AVE
+					</div>
+					<div class="infoEntrada">
+						Turista
+					</div>
+					<div class="infoEntrada">
+						Flexible
+					</div>
+					
+					<div class="infoEntrada precio">
+						<p>80€</p>
+						<button onclick="comprar('IDA', 'Madrid', 'Barcelona', '19:45h', '21:40h', 'AVE', 'Turista', '80', '24/12/2015')"> COMPRAR</button>
+					</div>	
+				</div>
+
+
+			</div>
+			<div role="tabpanel" class="tab-pane" id="vuelta">
+				<div class="cabeceras">
+					<div class="nombre">
+						Salida
+					</div>
+					<div class="nombre">
+						Llegada
+					</div>
+					<div class="nombre">
+						Duracion
+					</div>
+					<div class="nombre">
+						Tren
+					</div>
+					<div class="nombre">
+						Clase
+					</div>
+					<div class="nombre">
+						Tarifa
+					</div>
+					<div class="nombre">
+						Precio
+					</div>
+				</div>
+				<div class="entrada">
+					<div class="infoEntrada">
+						17:30h
+					</div>
+					<div class="infoEntrada">
+						20:00h
+					</div>
+					<div class="infoEntrada">
+						2h 30min
+					</div>
+					<div class="infoEntrada">
+						AVE
+					</div>
+					<div class="infoEntrada">
+						Turista Plus
+					</div>
+					<div class="infoEntrada">
+						Flexible
+					</div>
+					
+					<div class="infoEntrada precio">
+						<p>117€</p>
+						<button onclick="comprar('VUELTA', 'Barcelona', 'Madrid', '17:30h', '20:00h', 'AVE', 'Turista Plus', '117', '31/12/2015')"> COMPRAR</button>
+					</div>	
+				</div>
+				<div class="entrada">
+					<div class="infoEntrada">
+						13:30h
+					</div>
+					<div class="infoEntrada">
+						17:45h
+					</div>
+					<div class="infoEntrada">
+						2h 15min
+					</div>
+					<div class="infoEntrada">
+						AVE
+					</div>
+					<div class="infoEntrada">
+						Turista
+					</div>
+					<div class="infoEntrada">
+						Promo
+					</div>
+					
+					<div class="infoEntrada precio">
+						<p>70€</p>
+						<button onclick="comprar('VUELTA', 'Barcelona', 'Madrid', '13:30h', '17:45h', 'AVE', 'Turista', '70', '31/12/2015')"> COMPRAR</button>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+	<div id="compra">
+		<div id="tituloCompra">
+			<b>TU COMPRA</b>
+		</div>
+		<div id="numeroViajeros">
+			<p><b>Nº Viajeros:</b></p>
+			<br>
+			<p>1 Adulto</p>
+		</div>
+
+		<div id="finCompra">
+			<p>
+				<b>TOTAL: </b>
+				<b>0</b>
+				<b>€</b>
+			</p>
+			<button onclick="vaciarCompra()">VACIAR</button>
+			<button onclick="location.href = 'viajero.html';">CONTINUAR</button>
+		</div>		
+	</div>
+
+
+
+
+
+	<div id="footer">
+		
+		<div id="divfooter1linea">
+			<div id="divdescargateapps">
+				<a class="simplegray" > Descargate nuestras apps! &nbsp;</a>
+				<a href="http://www.renfe.com/viajeros/movilidad/renfeticket/descarga.html"></a>
+				<img class="fotosapps" src="images/ico1.png" alt="app1">
+
+				<a class="simplegray" >&nbsp;&nbsp;&nbsp;</a>
+				<a href="http://www.renfe.com/viajeros/movilidad/app_cercanias.html	">
+					<img class="fotosapps" href="https://play.google.com/store" src="images/ico2.png" alt="app2">
+				</a>
+				<a class="simplegray" >&nbsp;&nbsp;&nbsp;</a>
+				<a href="http://renfe.mobi/renfev2/inicio.do">
+					<img class="fotosapps" href="https://play.google.com/store" src="images/ico3.png" alt="app3">
+				</a>
+			</div>
+
+			<div id="divsiguenosen">
+				<a class="simplegray" > Siguenos en: &nbsp;</a>
+				<img  href="https://play.google.com/store" src="images/icofb.png" alt="app1">
+				<a class="simplegray" >&nbsp;&nbsp;</a>
+				<img  href="https://play.google.com/store" src="images/icotw.png" alt="app2">
+				<a class="simplegray" >&nbsp;&nbsp;</a>
+				<img  href="https://play.google.com/store" src="images/icoyt.png" alt="app3">
+				<a class="simplegray" >&nbsp;&nbsp;</a>
+				<img  href="https://play.google.com/store" src="images/icor1.png" alt="app3">
+				<a class="simplegray" >&nbsp;&nbsp;</a>
+				<img  href="https://play.google.com/store" src="images/icor2.png" alt="app3">
+			</div>
+
+
+		</div>
+		<div id="divfooternav">
+			<div id="nav">
+				<ul>
+					<li><a href="http://www.renfe.com/viajeros/atendo/index.html">Atendo</a></li>
+					<li><a href="http://www.renfe.com/viajeros/tarifas/grupos.html">Grupos</a></li>
+					<li><a href="http://www.renfe.com/empresa/comunicacion/incidencias.html">Avisos</a></li>
+					<li><a href="http://www.renfe.com/empresa/comunicacion/index.html">Prensa</a></li>
+					<li><a href="http://www.renfe.com/empresa/atencion_cliente/index.html">Atencion al cliente</a></li>
+					<li><a href="https://agencias.renfe.com/vol/agencias.do">Agencias</a></li>
+					<li><a href="http://www.renfe.com/empresa/informacion_legal/politica_cookies.html">Politica de cookies</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="divcentrarfooter">
+			<div id="divimagenabajofooter1">
+				<img id="imagenrenfe" src="images/ico4.png" alt="Logo renfe">
+
+			</div>
+			<div id="divrellenofooter">
+				<div id="divtextoconenlaces">
+					<div id="divmargintextotop">
+						<a class="simple" href="http://www.renfe.com/empresa/informacion_legal/accesibilidad_web.html">Accesibilidad &nbsp;</a>
+						<a class="simple" href="http://www.renfe.com/empresa/informacion_legal/index.html"> Informacion legal &nbsp;</a>
+						<a class="simple" href="http://www.renfe.com/mapa.html"> Mapa_web &nbsp;</a>
+
+					</div>
+				</div>
+				<div id="divtextosinenlaces">
+					<div id="divmargintextotop">
+						@Renfe. Todos los derechos reservados 
+					</div>
+				</div>
+			</div>
+			<div id="divimagenabajofooter2">
+				<img id="imagengobesp" src="images/ico5.png" alt="Logo gobierno">
+			</div>	
+		</div>
+
+	</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
